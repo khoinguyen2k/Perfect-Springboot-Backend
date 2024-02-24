@@ -1,0 +1,29 @@
+:root {
+    --blue: #3498db;
+    --red: #e74c3c;
+    --orange: #f39c12;
+    --black: #333;
+    --white: #fff;
+    --light-bg: #eee;
+    --box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    --border: 2px solid var(--black);
+}
+
+.header {
+    background-color: orange;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.content-section, .employee-info {
+    border: 1px solid black;
+    margin: 1px;
+}
+
+label {
+    font-weight: bold;
+}

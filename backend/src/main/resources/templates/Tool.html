@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tool</title>
+    <style>
+        select {
+            margin: 6px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Create route</h2>
+<form id="create-deliver-route">
+    <label for="send-customer"></label><select id="send-customer" name="send-customer">
+        <option value="">Select send user</option>
+    </select> <br>
+
+    <label for="first-transaction"></label><select id="first-transaction" name="first-transaction">
+        <option value="">Select first transaction point</option>
+    </select> <br>
+
+    <label for="first-gather"></label><select id="first-gather" name="first-gather">
+        <option value="">Select first gather point</option>
+    </select> <br>
+
+    <label for="second-gather"></label><select id="second-gather" name="second-gather">
+        <option value="">Select second gather point</option>
+    </select> <br>
+
+    <label for="second-transaction"></label><select id="second-transaction" name="second-transaction">
+        <option value="">Select second transaction point</option>
+    </select> <br>
+
+    <label for="receive-customer"></label><select id="receive-customer" name="receive-customer">
+        <option value="">Select receive user</option>
+    </select> <br>
+
+    <label for="package-box"></label><select id="package-box" name="package-box">
+        <option value="">Select package box</option>
+    </select> <br>
+
+    <label for="state"></label><select id="state" name="state">
+        <option value="">Select state</option>
+    </select> <br>
+
+    <input type="submit">
+
+</form>
+
+<script src="tool.js"></script>
+</body>
+</html>

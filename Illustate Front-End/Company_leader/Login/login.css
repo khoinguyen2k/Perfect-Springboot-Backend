@@ -1,0 +1,61 @@
+:root {
+    --blue: #3498db;
+    --red: #e74c3c;
+    --orange: #f39c12;
+    --black: #333;
+    --white: #fff;
+    --light-bg: #eee;
+    --box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    --border: 2px solid var(--black);
+}
+
+.container {
+    max-width: 1200px;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.form-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 70px;
+}
+
+.form-container form {
+    width: 500px;
+    border: var(--border);
+    padding: 20px;
+    text-align: center;
+    background-color: var(--white);
+}
+
+.form-container form h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.form-container form .box {
+    width: 100%;
+    border: var(--border);
+    padding: 12px 14px;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.form-container form p {
+    margin-top: 20px;
+    font-size: 20px;
+    color: var(--black);
+}
+
+.form-container form p a {
+    color: var(--red);
+}
+
+.form-container form p a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,1 @@
+const SIGN_IN_SUCCESSFUL = "Sign in successful";

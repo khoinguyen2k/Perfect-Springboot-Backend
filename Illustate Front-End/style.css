@@ -1,0 +1,162 @@
+:root{
+    --blue:#3498db;
+    --red:#e74c3c;
+    --orange:#f39c12;
+    --black:#333;
+    --white:#fff;
+    --light-bg:#eee;
+    --box-shadow:0 5px 10px rgba(0,0,0,.1);
+    --border:2px solid var(--black);
+}
+
+.header {
+    background-color: orange;
+}
+.admin-product-form-container {
+    background-color: #FCFC00;
+}
+
+.service {
+    margin-bottom: 10em;
+}
+
+.product-display {
+    margin: 2rem 0;
+}
+
+.product-display .product-display-table {
+    width: 100%;
+    text-align: center;
+}
+
+.product-display .product-display-table thead {
+    background: #eee;
+}
+
+.product-display .product-display-table th {
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+
+.product-display .product-display-table td {
+    padding: 1rem;
+    font-size: 2rem;
+    border-bottom: 1rem solid black;
+}
+
+.product-display .product-display-table .btn:first-child {
+    margin-top: 0;
+}
+
+.product-display .product-display-table .btn:last-child:hover {
+    background: black;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.admin-product-form-container.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+
+.admin-product-form-container form {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: .5rem;
+    background: #eee;
+}
+
+.admin-product-form-container form h3 {
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.admin-product-form-container form .box {
+    width: 100%;
+    border-radius: .5rem;
+    padding: 1.2rem 1.5rem;
+    font-size: 1.7rem;
+    margin: 1rem 0;
+    background: white;
+    text-transform: none;
+}
+
+.form-container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    padding-bottom: 70px;
+}
+
+.form-container form{
+    width: 500px;
+    border:var(--border);
+    padding:20px;
+    text-align: center;
+    background-color: var(--white);
+}
+
+.form-container form h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color:var(--black);
+}
+
+.form-container form .box{
+    width: 100%;
+    border:var(--border);
+    padding:12px 14px;
+    font-size: 18px;
+    margin:10px 0;
+}
+
+.form-container form p{
+    margin-top: 20px;
+    font-size: 20px;
+    color:var(--black);
+}
+
+.form-container form p a{
+    color:var(--red);
+}
+
+.form-container form p a:hover{
+    text-decoration: underline;
+}
+
+table, th, td {
+    border: 1px solid;
+}
+
+.square-button {
+    width: 180px;
+    height: 180px;
+    font-size: 48px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.normal-button {
+    width: 100px;
+    height: 100px;
+    font-size: 18px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

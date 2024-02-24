@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<title>Magic Post</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../../style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+	<link rel="stylesheet" href="customer.css">
+</head>
+
+<body>
+<div class="header">
+	<a href="#">
+		<img src="../../assets/header.jpeg" alt="logo" style="height: 5rem; width: 10rem;">
+	</a>
+</div>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+	<div class="container-fluid">
+
+		<ul class="navbar-nav me-auto justify-content-between d-flex">
+			<li class="nav-item">
+				<a class="navbar-brand" href="customer.html">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="../Login/login.html">Login</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="../Login/login.html">Sign up</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="../Login/login.html">Log out</a>
+			</li>
+
+		</ul>
+
+	</div>
+</nav>
+
+<div class="content">
+    <div class="content-section leader-info">
+        <h4>Thông tin</h4>
+		<button id="show-info">Show</button> <br>
+
+		<label>Họ tên: </label><p id="fullname"></p>
+		<label>Địa chỉ: </label><p id="address"></p>
+		<label>Số điện thoại: </label><p id="phone"></p>
+		<label>Mã bưu chính: </label><p id="postal-code"></p>
+		<label>Ảnh chân dung </label><img src="../../assets/avatar.jpg" alt="placeholder avatar" class="img-fluid">
+    </div>
+
+	<div class="content-section cart-list table-responsive">
+		<h4>Danh sách đơn hàng</h4>
+		<button id="btn-show-cart-list">Show</button> <br>
+		<table class="table">
+			<thead>
+			<th class="col-1">Sender</th>
+			<th class="col-1">Receiver</th>
+			<th class="col-3">Item info</th>
+			<th class="col-2">State</th>
+			<th class="col-2">Send time</th>
+			<th class="col-2">Receive time</th>
+			<th class="col-1">Price</th>
+			</thead>
+			<tbody>
+
+			</tbody>
+		</table>
+
+	</div>
+
+</div>
+
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="row">
+					<div class="col-6 d-flex align-items-center justify-content-center">
+						<ul class="list-unstyled">
+							<li><a href="#">Product</a></li>
+							<li><a href="#">Benefits</a></li>
+							<li><a href="#">Partners</a></li>
+							<li><a href="#">Team</a></li>
+						</ul>
+					</div>
+					<div class="col-6 d-flex align-items-center justify-content-center">
+						<ul class="list-unstyled">
+							<li><a href="#">Documentation</a></li>
+							<li><a href="#">Support</a></li>
+							<li><a href="#">Legal Terms</a></li>
+							<li><a href="#">About</a></li>
+						</ul>
+					</div>
+				</div>
+				<ul class="nav d-flex align-items-center justify-content-center ">
+					<li class="nav-item"><a href="" class="nav-link "><i class="fa fa-facebook fa-lg"></i></a></li>
+					<li class="nav-item"><a href="" class="nav-link"><i class="fa fa-twitter fa-lg"></i></a></li>
+					<li class="nav-item"><a href="" class="nav-link"><i class="fa fa-github fa-lg"></i></a></li>
+					<li class="nav-item"><a href="" class="nav-link"><i class="fa fa-instagram fa-lg"></i></a></li>
+				</ul>
+				<br>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script src="../Login/ResponseConstant.js" type="text/javascript"></script>
+<script src="models/CustomerSignUp.js" type="text/javascript"></script>
+<script src="features/showCustomerInfo.js" type="text/javascript"></script>
+<script src="features/showCartList.js" type="text/javascript"></script>
+</body>

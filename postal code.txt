@@ -1,0 +1,64 @@
+STT	Tên tỉnh/thành	Mã	Mã vùng điện thoại
+1	Hà Giang	20xxx	219
+2	Cao Bằng	21xxx	206
+3	Bắc Kạn	23xxx	209
+4	Tuyên Quang	22xxx	207
+5	Lào Cai	31xxx	214
+6	Điện Biên	32xxx	215
+7	Lai Châu	30xxx	213
+8	Sơn La	34xxx	212
+9	Yên Bái	33xxx	216
+10	Hòa Bình	36xxx	218
+11	Thái Nguyên	24xxx	208
+12	Lạng Sơn	25xxx	205
+13	Quảng Ninh	01xxx đến 02xxx	203
+14	Bắc Giang	26xxx	204
+15	Phú Thọ	35xxx	210
+16	Vĩnh Phúc	15xxx	211
+17	Bắc Ninh	16xxx	222
+18	Hà Nội	10xxx đến 14xxx	242~248
+19	Hải Dương	03xxx	220
+20	Hải Phòng	04xxx đến 05xxx	225
+21	Hưng Yên	17xxx	221
+22	Thái Bình	06xxx	227
+23	Hà Nam	18xxx	226
+24	Nam Định	07xxx	228
+25	Ninh Bình	08xxx	229
+26	Thanh Hoá	40xxx đến 42xxx	237
+27	Nghệ An	43xxx đến 44xxx	238
+28	Hà Tĩnh	45xxx đến 46xxx	239
+29	Quảng Bình	47xxx	232
+30	Quảng Trị	48xxx	233
+31	Thừa Thiên Huế	49xxx	234
+32	Đà Nẵng	50xxx	236
+33	Quảng Nam	51xxx đến 52xxx	235
+34	Quảng Ngãi	53xxx đến 54xxx	255
+35	Kon Tum	60xxx	260
+36	Gia Lai	61xxx đến 62xxx	269
+37	Bình Định	55xxx	256
+38	Phú Yên	56xxx	257
+39	Đắk Lắk	63xxx đến 64xxx	262
+40	Khánh Hoà	57xxx	258
+41	Đắk Nông	65xxx	261
+42	Lâm Đồng	66xxx	263
+43	Ninh Thuận	59xxx	259
+44	Bình Phước	67xxx	271
+45	Tây Ninh	80xxx	276
+46	Bình Dương	75xxx	274
+47	Đồng Nai	76xxx	251
+48	Bình Thuận	77xxx	252
+49	Thành phố Hồ Chí Minh	70xxx đến 74xxx	282~287
+50	Long An	82xxx đến 83xxx	272
+51	Bà Rịa – Vũng Tàu	78xxx	254
+52	Đồng Tháp	81xxx	277
+53	An Giang	90xxx	296
+54	Tiền Giang	84xxx	273
+55	Vĩnh Long	85xxx	270
+56	Bến Tre	86xxx	275
+57	Cần Thơ	94xxx	292
+58	Kiên Giang	91xxx đến 92xxx	297
+59	Trà Vinh	87xxx	274
+60	Hậu Giang	95xxx	293
+61	Sóc Trăng	96xxx	299
+62	Bạc Liêu	97xxx	291
+63	Cà Mau	98xxx	290

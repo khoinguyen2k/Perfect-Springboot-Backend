@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Magic Post </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="Gather%20point%20leader/Leader%20Page/features/showLeaderInfo.js">
+        function loadDoc(name) {
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = function () {
+                myFunction(this);
+            }
+            xhttp.open("GET", name);
+            xhttp.send();
+        }
+        function myFunction(xml) {
+            const xmlDoc = xml.responseXML;
+            const x = xmlDoc.getElementsByTagName("GOOD");
+            let table = "<tr><th>Gathering Point</th><th>Item Name</th></tr>";
+            for (let i = 0; i < x.length; i++) {
+                table += "<tr><td>" +
+                    x[i].getElementsByTagName("DESTINATION")[0].childNodes[0].nodeValue +
+                    "</td><td>" +
+                    x[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue +
+                    "</td></tr>";
+            }
+            document.getElementById("demo").innerHTML = table;
+        }
+        window.addEventListener("DOMContentLoaded", (event) => {
+            const el = document.getElementById('good');
+            if (el) {
+                document.getElementById("good").addEventListener("change", function (event) {
+                    event.preventDefault();
+                    let content = document.getElementById("good").value;
+                    if (content == "go") {
+                        loadDoc("good.xml");
+                    } else {
+                        loadDoc("good1.xml");
+                    }
+                })
+            }
+        });
+
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <a href="index.html">
+            <img src="assets/header.jpeg" title="" style="height: 5rem; width: 10rem;">
+        </a>
+    </div>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="navbar-brand" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Customer/Login/login.html">Login</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+    <div class="product-display">
+        <h3>Confirm order</h3>
+        <table class="product-display-table">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Gathering Point</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>From transaction point</td>
+                <td>Nam Từ Liêm</td>
+                <td>
+                    <a href="" class="btn btn-success"> <i class="fas fa-edit"></i> Edit </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="admin-product-form-container">
+
+        <form action="" method="post" enctype="multipart/form-data">
+            <h3>Add Shipping Order</h3>
+            <select name="typeOrder">
+                <option value="type1">Đơn chuyển hàng đến điểm tập kết đích</option>
+                <option value="type2">Đơn chuyển hàng đến điểm giao dịch đích</option>
+            </select>
+            <input type="text" placeholder="Địa điểm" name="location_name" class="box">
+            <input type="text" placeholder="Loại hàng" name="type_name" class="box">
+            <input type="submit" class="btn btn-success" name="add_product" value="add product">
+        </form>
+
+    </div>
+
+    <div class="admin-product-form-container">
+
+        <form action="" method="post" enctype="multipart/form-data">
+            <h3>Good Statistic</h3>
+            <select name="good" id="good" style="width: 100%;text-align: center;">
+                <option value="go">Hàng chuyển thành công</option>
+                <option value="des">Hàng không thành công</option>
+            </select>
+        </form>
+        <div class="d-flex align-items-center justify-content-center">
+            <table id="demo"></table>
+        </div>
+        <table style="display: none;">
+            <thead>
+                <tr>
+                    <th>Gathering Point</th>
+                    <th>Item Name</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>Nam Từ Liêm </td>
+                <td>Iphone</td>
+                <td>
+                    <a href="" class="btn btn-success"> <i class="fas fa-edit"></i> Edit </a>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-6 d-flex align-items-center justify-content-center">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Product</a></li>
+                                <li><a href="#">Benefits</a></li>
+                                <li><a href="#">Partners</a></li>
+                                <li><a href="#">Team</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 d-flex align-items-center justify-content-center">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Documentation</a></li>
+                                <li><a href="#">Support</a></li>
+                                <li><a href="#">Legal Terms</a></li>
+                                <li><a href="#">About</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="nav d-flex align-items-center justify-content-center ">
+                        <li class="nav-item"><a href="" class="nav-link "><i class="fa fa-facebook fa-lg"></i></a></li>
+                        <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-twitter fa-lg"></i></a></li>
+                        <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-github fa-lg"></i></a></li>
+                        <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-instagram fa-lg"></i></a></li>
+                    </ul>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
